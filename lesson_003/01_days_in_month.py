@@ -9,6 +9,9 @@
 # Номер месяца получать от пользователя следующим образом
 user_input = input("Введите, пожалуйста, номер месяца: ")
 month = int(user_input)
+if isinstance(user_input,int) == True:
+    print("Ошибка! Пожалуйста, введите номер месяца числом")
+else:
 
     if month == 1:
         print('Вы ввели', month, "месяц, в нем 31 день")
@@ -20,6 +23,4 @@ month = int(user_input)
         print('Вы ввели', month, "месяц, в нем 30 дней")
     elif month == 5:
         print('Вы ввели', month, "месяц, в нем 31 день")
-    else:
-        print("Номер месяца введен некоректно")
 
